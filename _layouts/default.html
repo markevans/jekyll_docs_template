@@ -10,37 +10,38 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/styles.css">
 
     </head>
     <body>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
+        <div class="wrapper">
+          <header>
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <ul>
+              {% for post in site.posts %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </header>
+          <section>
+            {{ content }}
+          </section>
+          <footer>
+            <div class="contact">
+              <p>
+                Created and maintained by <a href="https://github.com/yourname">Mark Evans</a><br />
+                <a href="https://github.com/yourname/yourproject/graphs/contributors">Contributors</a><br />
+                <small>Derived from theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+              </p>
+              <p>
+                <a href="https://github.com/yourname/yourproject">GitHub</a> <br />
+                <a href="http://github.com/yourname/yourproject/issues">Issues</a> <br />
+                <a href="http://groups.google.com/group/yourproject-users">Suggestions/Questions</a> <br />
+              </p>
             </div>
-
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+          </footer>
+        </div> <!-- /wrapper -->
 
     </body>
 </html>
