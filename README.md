@@ -6,7 +6,7 @@ To run locally:
 
 View in your browser at http://localhost:4000
 
-Add/edit markdown pages at `index.markdown` and `_posts/2000-01-01-some-page-name.markdown`.
+Edit `_config.yml` and add / edit markdown pages at `index.markdown` and `_posts/2000-01-01-some-page-name.markdown`.
 The dummy date (2000-01-01) is needed for Jekyll to work.
 
 Copy repo (without git files!) into your project's `gh-pages` branch and push.
