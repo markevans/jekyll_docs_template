@@ -2,7 +2,7 @@ To run locally:
 
     cd /path/to/repository
     gem install jekyll
-    jekyll server --watch
+    jekyll server --watch --baseurl ''
 
 View in your browser at http://localhost:4000
 

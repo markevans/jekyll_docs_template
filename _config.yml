@@ -2,4 +2,5 @@ name: Your Project
 markdown: redcarpet
 pygments: true
 permalink: /:title
+baseurl: /yourproject
 
